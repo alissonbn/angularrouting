@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { AutenticaComponent } from './autentica/autentica.component';
+import { Feature2Component } from './feature2/feature2/feature2.component';
 import { InternaComponent } from './interna/interna.component';
 import { SaidaComponent } from './saida/saida.component';
 

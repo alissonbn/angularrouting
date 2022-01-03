@@ -9,6 +9,9 @@ import { InternaComponent } from './interna/interna.component';
 import { SaidaComponent } from './saida/saida.component';
 import { AutenticaComponent } from './autentica/autentica.component';
 
+import { Feature2Module } from './feature2/feature2.module';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +22,8 @@ import { AutenticaComponent } from './autentica/autentica.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FeatureModule
+    FeatureModule,
+    Feature2Module
   ],
   providers: [],
   bootstrap: [AppComponent]

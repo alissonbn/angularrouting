@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavegacaoService } from 'src/app/navegacao/navegacao.service';
 
 @Component({
   selector: 'app-feature-component',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeatureComponent implements OnInit {
   caminho?: string;
-  constructor() { }
+  constructor(private navegacaoService: NavegacaoService) { }
 
   ngOnInit(): void {
     this.caminho = history.state.caminho;
