@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavegacaoService } from 'src/app/navegacao/navegacao.service';
+import { NavegacaoService } from 'src/app/navegacao-module/navegacao.service';
 
 @Component({
   selector: 'app-feature2',

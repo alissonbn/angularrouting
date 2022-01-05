@@ -4,20 +4,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { FeatureModule } from './feature/feature.module';
-import { InternaComponent } from './interna/interna.component';
+import { FeatureModule } from './feature-module-1/feature.module';
+import { EntradaComponent } from './entrada/entrada.component';
 import { SaidaComponent } from './saida/saida.component';
-import { AutenticaComponent } from './autentica/autentica.component';
+import { AutenticacaoComponent } from './autenticacao/autenticacao.component';
 
-import { Feature2Module } from './feature2/feature2.module';
+import { Feature2Module } from './feature-module-2/feature2.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    InternaComponent,
+    EntradaComponent,
     SaidaComponent,
-    AutenticaComponent
+    AutenticacaoComponent
   ],
   imports: [
     BrowserModule,

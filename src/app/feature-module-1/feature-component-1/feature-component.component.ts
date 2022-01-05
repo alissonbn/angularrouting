@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { NavegacaoService } from 'src/app/navegacao/navegacao.service';
+import { NavegacaoService } from 'src/app/navegacao-module/navegacao.service';
 
 @Component({
-  selector: 'app-feature-component',
-  templateUrl: './feature-component.component.html',
-  styleUrls: ['./feature-component.component.css']
+  selector: 'app-feature-1',
+  templateUrl: './feature-1.component.html',
+  styleUrls: ['./feature-1.component.css']
 })
-export class FeatureComponent implements OnInit {
+export class Feature1Component implements OnInit {
   caminho?: string;
   constructor(private navegacaoService: NavegacaoService) { }
 

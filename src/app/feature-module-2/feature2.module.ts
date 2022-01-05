@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
-import { Feature2Component } from './feature2/feature2.component';
-import { NavegacaoModule } from '../navegacao/navegacao.module';
+import { Feature2Component } from './feature-component-2/feature2.component';
+import { NavegacaoModule } from '../navegacao-module/navegacao.module';
 
 
 const routes: Routes = [
-  {path: "feat2", component: Feature2Component}
+  {path: "feature2", component: Feature2Component}
 ]
 
 @NgModule({
