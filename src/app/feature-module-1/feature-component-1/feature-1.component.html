@@ -1,4 +1,8 @@
 <p>feature1 works!</p>
-<a routerLink="/entrada">Volta para /entrada chumbado</a>
+<h2 *ngIf="this.opcao;else opcaoFalso">Opcao = true</h2>
+<ng-template #opcaoFalso>
+    <h2>Opcao = Falso</h2>>
+</ng-template>
+<a routerLink="/entrada">Volta para /entrada</a>
 <p>Estado passado: {{this.caminho}}</p>
 <a routerLink={{this.caminho}}>Prossegue pelo estado passado pelo router</a>

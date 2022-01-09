@@ -9,13 +9,15 @@ import { NavegacaoService } from '../navegacao-module/navegacao.service';
 })
 export class EntradaComponent implements OnInit {
 
-  componenteSaida : Estado = {caminho: "/saida"};
+  componenteSaida : Estado = {caminho: "/saida", opcao: false};
+  opcao: boolean = false;
   constructor(private nav: NavegacaoService) { }
 
   ngOnInit(): void {
     console.log(`OnInit  Estado-entrada ${this.componenteSaida.caminho}`);
   }
   OnClick(): void{
+    this.componenteSaida.opcao = this.opcao;
     console.log(`Estado-entrada ${this.componenteSaida.caminho}`);
   }
   OnClick2(): void{

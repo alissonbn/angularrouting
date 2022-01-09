@@ -8,10 +8,12 @@ import { NavegacaoService } from 'src/app/navegacao-module/navegacao.service';
 })
 export class Feature1Component implements OnInit {
   caminho?: string;
+  opcao?: boolean;
   constructor(private navegacaoService: NavegacaoService) { }
 
   ngOnInit(): void {
     this.caminho = history.state.caminho;
+    this.opcao = history.state.opcao;
     console.log(`caminho ${this.caminho}`);
   }
 

@@ -11,6 +11,7 @@ import { AutenticacaoComponent } from './autenticacao/autenticacao.component';
 
 import { Feature2Module } from './feature-module-2/feature2.module';
 
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { Feature2Module } from './feature-module-2/feature2.module';
     BrowserModule,
     AppRoutingModule,
     FeatureModule,
-    Feature2Module
+    Feature2Module,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

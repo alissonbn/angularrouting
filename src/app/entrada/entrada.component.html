@@ -1,4 +1,11 @@
 <p>entrada works!</p>
+<p>
+Escolha a opcao:
+<select [(ngModel)]="this.opcao">
+    <option [ngValue]="true">True</option>
+    <option [ngValue]="false">False</option>
+</select>
+</p>
 <a routerLink="/autentica" [state]="componenteSaida">autentica</a>
 <br>
 <a routerLink="/feature1" [state]="componenteSaida" (click)="OnClick()">feature1</a>
